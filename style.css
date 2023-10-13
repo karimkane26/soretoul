@@ -2,6 +2,35 @@ ul{
     display: inline;
     
 }
+.recherche{
+    padding: 0;
+   background-color: #a7c957;
+   height: 35px;
+   margin-top: 8px;
+   width: 55px;
+   border-radius: 3px;
+   border: none;
+   color: #5bb000;
+   
+}
+.phone{
+    margin-left: 30px;
+}
+
+.input{
+    height: 30px;
+    background-color: #faffea;
+    color: #9AD257;
+    margin-left: 10px;
+    margin-top: 10px;
+   width: 500px;
+    border-radius: 3px;
+   border: none;
+
+}
+nav{
+    display: flex;
+}
 .navbar{
 height: 50px;
 /* background-color:#9AD257; */
