@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soreetul </title>
+    <link rel="icon" href="./img/32354strawberry_98884.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./img/soreetul-logo-1563321055.jpg" alt="" width="300">
+            <input type="text" placeholder="Search" style="padding: 5px; width: 500px; background-color: #a7c957; border-radius: 5px;">
+            <button><i class="fa fa-search" style="font-size:24px;background-color: #a7c957; width: 60px; height: 30px; padding-left: 25px;"></i></button>
+            <i class="fa fa-phone" aria-hidden="true">771627821</i>
+            <i class="fa fa-user" aria-hidden="true" ></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </nav>
+     <div class="navbar">
+        <ul>
+            <li><a href="">Acceuil</a></li>
+            <li><a href="">Boutique</a></li>
+            <li><a href="">Spécial Tabaski</a></li>
+            <li><a href="">Produits Frais</a></li>
+            <li><a href="">Diet</a></li>
+            <li><a href="">Cosmétiques</a></li>
+            <li><a href="">Santé et Bien-être </a></li>
+            <li><a href="">More </a></li>
+        </ul>
+     </div>
+    </header>
+    <section class="container">
+        <div class="slide">
+        <img class="mySlides" src="./img/4ee6d71049212d3d0d929f26c0f816a4b6439709_slide_just_naturel.png" alt="">
+        <img class="mySlides" src="./img/682d23fce751feca06e0652408e1794e12aff966_Slideshow2.png" alt="">
+        <img class="mySlides" src="./img/549aa5f0f81f381c14c8c27e8d8b95a995c144d6_bienvenue123.jpg" alt="">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+      <div class="flexbox">
+        <div class="imgflex">
+        <img  class="img" src="./img/jus-bissap-rouge.jpg" alt="" width="200">
+        <img  class="img"src="./img/jus-bissap-rouge-diete.jpg" alt="" width="200">
+        <img class="img" src="./img/cafe-tubaa-lansar.jpg" alt="" width="200">
+        </div>
+      </div>
+
+      <div class="flexbox1">
+        <div class="commande">
+            <img src="./img/commande.png" alt="" width="58px" height="40px">
+            <h3>Commande</h3>
+            <p>en un simple clic</p>
+        </div>
+        <div class="livraison">
+            <img src="./img/Livraison express.png" alt="" width="58px" height="40px">
+            <h3>Livraison</h3>
+            <p>à domicile</p>
+        </div>
+        <div class="Paiement">
+            <img src="./img/cash on delivery1.png" alt="" width="58px" height="40px">
+            <p>à la livraison</p>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
