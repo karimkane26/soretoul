@@ -14,7 +14,7 @@ ul{
    
 }
 .phone{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .input{
@@ -26,57 +26,133 @@ ul{
    width: 500px;
     border-radius: 3px;
    border: none;
-
 }
 nav{
     display: flex;
 }
 .navbar{
+display: flex;
 height: 50px;
 /* background-color:#9AD257; */
 background-color: #6FB22C;
 border-radius: 5px;
-margin-left: 50px;
+/* margin-left: 50px;
 margin-right: 100px;
-justify-content: center;
+padding-right: 94%; */
+align-items: center;
+justify-content: space-between;
+width: 100%;
 }
-li{
+
+.navbar  li{
     display: inline-block;
-    color: white;
-    margin-top: 15px;
-    margin-right: 20px;
-    
+    flex-direction: row;
+    margin-right: 80px;
 }
-li a{
+.navbar li a{
+    text-decoration: none;
     color: white;
 }
 .container{
     margin-left: 50px;
     margin-right: 100px;
 }
-.flexbox{
-    display: flex;
-   flex-direction: column;
-}
 
-.flexbox1{
-    display: flex;
-    /* margin-left: 20px; */
-    justify-content: center;
-    height: 15vh;
-    background-color: grey;
-    margin-left: 50px;
-    margin-right: 10px;    
+/* pour les tableaux  flexbox*/
+.section1{
+    width: 100%;
 }
-
-.flexbox1>div{
+.Produitsjus{
+    float: left;
+}
+.jus{
     display: flex;
+    flex-direction: column;
+}
+.Livraison{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
 }
 h3{
     margin-left: 15px;
     margin-top: 0;
 }
-.flexbox1>div p{
-    padding-top: 30px;
-    color: #a1a1a1;
+.user{
+    /* margin-left: 50px; */
+    font-size: 30px;
+    color: #9AD257;
+    margin-top: 10px;
+    margin-left: 20px;
+
 }
+.carte{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 25px;
+    color: #9AD257;
+}
+.phone{
+    font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.icone{
+    display: flex;
+    flex-direction: row;
+    color: #9AD257;
+}
+.pa{
+    color: black;
+    margin-left: 15px;
+}
+.jus>div>h1,p{
+    text-align: center;
+}
+
+.nouveaute{
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+    gap: 400px;
+}
+.menu{
+    gap: 20px;
+}
+.menu li{
+    display: inline;
+    margin-right: 10px;
+}
+.prodsbuy{
+    display: flex;
+    flex-wrap: wrap;
+}
+.prodsbuy>div>img{
+    align-items: center;
+    margin-left: 25px;
+}
+.prodsbuy>div{
+    border-bottom: 0.3px solid rgb(177, 172, 172);
+    border-right: 0.5px solid rgb(177, 172, 172);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 220px;
+    padding-bottom: 30px;
+}
+.prodsbuy>div>h3{
+    text-align: center;
+    color: #ccdb00;
+ }
+.prodsbuy>div>a{
+   text-align: center;
+   margin-left: 50px;
+   text-decoration: none;
+   font-family: 'Kanit', sans-serif;
+   font-weight: 700;
+   color: black;
+}
+.prodsbuy>div>a:hover{
+    color: #ccdb00;
+ }
