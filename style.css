@@ -64,10 +64,14 @@ width: 100%;
 }
 .Produitsjus{
     float: left;
+    width: 20%;
 }
 .jus{
     display: flex;
     flex-direction: column;
+}
+.jus>div>img{
+    margin-left: 30px;
 }
 .Livraison{
     display: flex;
@@ -115,30 +119,26 @@ h3{
     display: flex;
     margin-top: 0;
     padding-top: 0;
-    gap: 400px;
+    gap: 300px;
 }
-.menu{
-    gap: 20px;
-}
+
 .menu li{
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .prodsbuy{
     display: flex;
+    flex-direction: row;
+    width: 80%;
     flex-wrap: wrap;
 }
 .prodsbuy>div>img{
-    align-items: center;
     margin-left: 25px;
 }
 .prodsbuy>div{
     border-bottom: 0.3px solid rgb(177, 172, 172);
-    border-right: 0.5px solid rgb(177, 172, 172);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 220px;
+    border-right: 1px solid rgb(177, 172, 172);
+    border-left: none;
     padding-bottom: 30px;
 }
 .prodsbuy>div>h3{
@@ -156,3 +156,22 @@ h3{
 .prodsbuy>div>a:hover{
     color: #ccdb00;
  }
+.section2{
+    display: inline;
+    width: 40%;
+}
+.section2>div>.img{
+float: left;
+}
+.section2>div>h1{
+    margin-left: 25px ;
+}
+.section2>div>p{
+   text-align: left;
+}
+.banner{
+    float: right;
+}
+.section2>div>.imgf{
+    margin-top: 0;
+}
