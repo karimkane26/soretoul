@@ -175,3 +175,82 @@ float: left;
 .section2>div>.imgf{
     margin-top: 0;
 }
+.featured{
+    margin-top: 350px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.featured>div{
+    /* border: 1px solid; */
+    border-bottom: 0.3px solid rgb(177, 172, 172);
+    border-right: 1px solid rgb(177, 172, 172);
+    border-left: none;
+}
+.featured >div>h1{
+    margin-top: 0;
+    color: #ccdb00;
+    text-align: center;
+}
+.actualite{
+    text-align: left;
+   font-family: 'Kanit', sans-serif;
+    font-weight: 700px;
+    width: 70%;
+    float: right;
+    background-color: whitesmoke;
+    height: 60px;
+    justify-content: center;
+}
+.box{
+    float: right;
+    width: 70%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.box>div>img{
+    width: 300px;
+}
+.box>div>b{
+    text-align: center;
+}
+.marque{
+    display: flex;
+    gap: 20px;
+    width: 85%;
+    background-color: whitesmoke;
+    height: 35vh;
+    float: right;
+}
+.marque>h1{
+    float: left;
+    margin-left: 50px;
+    flex-wrap: nowrap;
+}
+.marque>div{
+    float: right;
+    gap: 30px;
+}
+.marque>div>img{
+    width:100px ;
+}
+.pied{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+.pied>div>p{
+    width: 250px;
+    color: #a1a1a1;
+}
+.pied>div>a{
+    margin-left: 10px;
+    width: 20px;
+}
+.pied>div>img{
+    width: 300px;
+}
+footer{
+    clear: both;
+}
