@@ -111,6 +111,9 @@ h3{
     color: black;
     margin-left: 15px;
 }
+.Produitsjus{
+    width: 15%;
+}
 .jus>div>h1,p{
     text-align: center;
 }
@@ -129,11 +132,12 @@ h3{
 .prodsbuy{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
+    float: right;
 }
 .prodsbuy>div>img{
-    margin-left: 25px;
+    margin-left: 20px;
 }
 .prodsbuy>div{
     border-bottom: 0.3px solid rgb(177, 172, 172);
@@ -254,3 +258,11 @@ float: left;
 footer{
     clear: both;
 }
+ /* page detail */
+ .details{
+    display: flex;
+ }
+ .details>div>p{
+    color: #a1a1a1;
+    font-family: sans-serif;
+ }
