@@ -16,7 +16,9 @@ ul{
 .phone{
     margin-left: 10px;
 }
-
+.mySlides{
+    width: 900px;
+}
 .input{
     height: 30px;
     background-color: #faffea;
@@ -155,11 +157,11 @@ h3{
    text-decoration: none;
    font-family: 'Kanit', sans-serif;
    font-weight: 700;
-   color: black;
 }
-.prodsbuy>div>a:hover{
-    color: #ccdb00;
- }
+/* .prodsbuy>div>a:hover{
+    background: rgba(0,0,0,0.6);
+    opacity: 0.4;
+ } */
 .section2{
     display: inline;
     width: 40%;
@@ -213,8 +215,11 @@ float: left;
     gap: 15px;
     flex-wrap: wrap;
 }
-.box>div>img{
+.box>div>a>img{
     width: 300px;
+}
+.box>div>a>img :hover{
+    color: white
 }
 .box>div>b{
     text-align: center;
@@ -266,3 +271,87 @@ footer{
     color: #a1a1a1;
     font-family: sans-serif;
  }
+
+ /* Partie responsive */
+@media (max-width : 667px) and (min-width: 375px){
+    nav{
+        display: flex;
+    }
+   nav>img{
+    width: 500px;
+    padding-left: 40px;
+   }
+   nav>.icone{
+    display: flex;
+    flex-direction: row;
+    color: #9AD257;
+    /* float: none; */
+    margin-top: 80px;
+    /* width: 30px; */
+    position: absolute;
+   }
+   .navbar {
+        display: inline-block;
+        height: 50px;
+        /* background-color: #9AD257; */
+        background-color: #6FB22C;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+}
+
+    .navbar li {
+        display: inline-block;
+        flex-direction: row;
+        margin-right: 30px;
+        text-align: center;
+    }
+    img.mySlides {
+        width: 350px;
+    }
+    .Produitsjus {
+        width: 100%;
+    }
+
+.Livraison {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    float: left;
+}
+
+.featured {
+    margin-top: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+box>div>b {
+    text-align: center;
+    margin-left: 40px;
+}
+.box>div>a>img {
+    width: 200px;
+}
+.marque {
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    background-color: whitesmoke;
+    height: 35vh;
+    float: right;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.marque>div{
+    gap: 30px;
+    margin-top: 100px;
+}
+footer{
+    clear: both;
+}
+
+}
