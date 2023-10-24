@@ -185,7 +185,9 @@ float: left;
     margin-top: 350px;
     display: flex;
     flex-wrap: wrap;
-
+    gap: 10px;
+    width: 80%;
+    margin-left: 80px;
 }
 .featured>div{
     /* border: 1px solid; */
@@ -417,13 +419,17 @@ footer{
     .marque>div>img{
         width: 50px ;
     }
-
+    .details>div>a>img{
+        width: 100px;
+    }
     .pied {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        height: 130vh;
     }
-    .pied >div{
-        display: inline-block;
-    }
+/* .pied>div>img{
+    width: 10px;
+} */
 
     footer{
         clear: both;
