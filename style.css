@@ -124,7 +124,7 @@ h3{
     display: flex;
     margin-top: 0;
     padding-top: 0;
-    gap: 300px;
+    /* gap: 300px; */
 }
 
 .menu li{
@@ -273,12 +273,12 @@ footer{
  }
 
  /* Partie responsive */
-@media (max-width : 667px) and (min-width: 375px){
+@media  screen and (max-width: 667px) and (min-width: 375px){
     nav{
         display: flex;
     }
    nav>img{
-    width: 500px;
+    width: 100px;
     padding-left: 40px;
    }
    nav>.icone{
@@ -286,13 +286,13 @@ footer{
     flex-direction: row;
     color: #9AD257;
     /* float: none; */
-    margin-top: 80px;
+    margin-top: 40px;
     /* width: 30px; */
     position: absolute;
    }
    .navbar {
         display: inline-block;
-        height: 50px;
+        height: 60px;
         /* background-color: #9AD257; */
         background-color: #6FB22C;
         border-radius: 5px;
@@ -314,44 +314,118 @@ footer{
     .Produitsjus {
         width: 100%;
     }
+    .Livraison {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: whitesmoke;
+        float: left;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+    .featured {
+        margin-top: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+    .box>div>b {
+        text-align: center;
+        margin-left: 40px;
+    }
+    .box>div>a>img {
+        width: 200px;
+    }
+    .marque {
+        display: flex;
+        gap: 20px;
+        width: 50%;
+        background-color: whitesmoke;
+        height: 35vh;
+        float: right;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .marque>div{
+        gap: 30px;
+        margin-top: 100px;
+    }
+    .nouveaute {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    ul.menu {
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .prodsbuy{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        float: right;
+    }
+    /* .prodsbuy>div{
+        margin-right: 50px;
+    } */
+    .box {
+        float: right;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    /* .marque {
+        display: flex;
+        gap: 20px;
+        width: 70%;
+        background-color: whitesmoke;
+        height: 35vh;
+        float: right;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    .marque {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        background-color: whitesmoke;
+        height: auto;
+        float: right;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+    .marque>div{
+        margin-top: 0;
+    }
+    /* .marque>h1 {
+        float: left;
+        margin-left: 10px;
+        font-size: 20px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    } */
 
-.Livraison {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    float: left;
-}
+    .marque>div>img{
+        width: 50px ;
+    }
 
-.featured {
-    margin-top: 350px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
-}
-box>div>b {
-    text-align: center;
-    margin-left: 40px;
-}
-.box>div>a>img {
-    width: 200px;
-}
-.marque {
-    display: flex;
-    gap: 20px;
-    width: 50%;
-    background-color: whitesmoke;
-    height: 35vh;
-    float: right;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.marque>div{
-    gap: 30px;
-    margin-top: 100px;
-}
-footer{
-    clear: both;
-}
+    .pied {
+        display: inline-block;
+    }
+    .pied >div{
+        display: inline-block;
+    }
 
-}
+    footer{
+        clear: both;
+    }
+    }
