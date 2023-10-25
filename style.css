@@ -134,7 +134,7 @@ h3{
 .prodsbuy{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     flex-wrap: wrap;
     float: right;
 }
@@ -177,6 +177,7 @@ float: left;
 }
 .banner{
     float: right;
+    margin-right: 180px;
 }
 .section2>div>.imgf{
     margin-top: 0;
@@ -187,7 +188,7 @@ float: left;
     flex-wrap: wrap;
     gap: 10px;
     width: 80%;
-    margin-left: 80px;
+    margin-left: 200px;
 }
 .featured>div{
     /* border: 1px solid; */
@@ -273,8 +274,8 @@ footer{
     color: #a1a1a1;
     font-family: sans-serif;
  }
-
- /* Partie responsive */
+ /* ---------------------------------Partie Responsive---------------------------------------------------------- */
+ 
 @media  screen and (max-width: 667px) and (min-width: 375px){
     nav{
         display: flex;
@@ -293,8 +294,9 @@ footer{
     position: absolute;
    }
    .navbar {
-        display: inline-block;
+        display: flex;
         height: 60px;
+        flex-direction: column;
         /* background-color: #9AD257; */
         background-color: #6FB22C;
         border-radius: 5px;
@@ -302,14 +304,28 @@ footer{
         justify-content: space-between;
         width: 100%;
         margin-top: 50px;
+        padding-bottom: 140px;
 }
-
-    .navbar li {
-        display: inline-block;
-        flex-direction: row;
+.navbar li {
+    /* display: inline; */
+    /* flex-direction: column; */
+    margin-right: 30px;
+    text-align: center;
+    /* margin-left: 0; */
+    padding: 5px;
+    /* justify-content: end; */
+    /* flex-wrap: wrap; */
+}
+    /* .navbar li {
+        display: flex;
+        flex-direction: column;
         margin-right: 30px;
         text-align: center;
-    }
+        margin-left: 0;
+        flex-wrap: wrap;
+    } */
+
+
     img.mySlides {
         width: 350px;
     }
@@ -329,7 +345,7 @@ footer{
         margin-top: 350px;
         display: flex;
         flex-wrap: wrap;
-        margin-left: 50px;
+        margin-left: 80px;
     }
     .box>div>b {
         text-align: center;
@@ -391,6 +407,19 @@ footer{
         flex-direction: row;
         flex-wrap: wrap;
     } */
+
+    .affiche >img{
+        margin-left: 70px;
+    }
+    .temoignage{
+        margin-left: 70px;
+    }
+    .banner{
+        margin-left: 70px;
+    }
+    .banner >img{
+        margin-left: 70px;
+    }
     .marque {
         display: flex;
         gap: 20px;
@@ -425,7 +454,7 @@ footer{
     .pied {
         display: flex;
         flex-direction: column;
-        height: 130vh;
+        padding-bottom: 470px;
     }
 /* .pied>div>img{
     width: 10px;
