@@ -275,8 +275,8 @@ footer{
     font-family: sans-serif;
  }
  /* ---------------------------------Partie Responsive---------------------------------------------------------- */
- 
-@media  screen and (max-width: 667px) and (min-width: 375px){
+ /* screen and (max-width: 667px) and (min-width: 375px */
+@media  screen and (max-width: 767px){
     nav{
         display: flex;
     }
