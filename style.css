@@ -339,7 +339,6 @@ footer{
         background-color: whitesmoke;
         float: left;
         padding-right: 20px;
-        flex-direction: column;
     }
     .featured {
         margin-top: 350px;
@@ -370,14 +369,20 @@ footer{
     }
     .nouveaute {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 0;
         padding-top: 0;
+        width: 100%;
     }
     ul.menu {
-        margin-left: 0;
+        display: flex;
+        /* margin-right: 20px; */
         padding-left: 0;
-        margin-top: 0;
+        margin-top: 50px;
+    }
+    .menu li{
+        font-size: 12px;
+        margin-left: 0;
     }
     .prodsbuy{
         display: flex;
@@ -456,9 +461,14 @@ footer{
         flex-direction: column;
         /* padding-bottom: 470px; */
     }
-.pied>div>{
-    margin-top: 0;
-}
+    .pied>div>{
+        margin-top: 0;
+    }
+
+    .pied>div>h1,p{
+        text-align: center;
+    }
+
 
     footer{
         clear: both;
