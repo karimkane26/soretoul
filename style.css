@@ -454,13 +454,18 @@ footer{
     .pied {
         display: flex;
         flex-direction: column;
-        padding-bottom: 470px;
+        /* padding-bottom: 470px; */
     }
-/* .pied>div>img{
-    width: 10px;
-} */
+.pied>div>{
+    margin-top: 0;
+}
 
     footer{
         clear: both;
+        margin-top: 0;
     }
     }
+/* pour tablette */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
